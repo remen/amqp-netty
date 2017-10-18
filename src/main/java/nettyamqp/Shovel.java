@@ -101,15 +101,6 @@ public class Shovel extends ChannelInboundHandlerAdapter {
                     throw new RuntimeException("foobar");
                 }
             });
-//            outboundChannel.writeAndFlush(msg).addListener((ChannelFuture f) -> {
-//                if (f.isSuccess()) {
-//                    ctx.channel().read();
-//                } else {
-//                    throw new RuntimeException("foobar");
-////                    f.channel().close();
-////                    ctx.channel().close();
-//                }
-//            });
         }
     }
 }
